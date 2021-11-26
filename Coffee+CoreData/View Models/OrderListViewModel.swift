@@ -4,7 +4,6 @@
 //
 //  Created by naseeem on 26/11/2021.
 //
-
 import Foundation
 import SwiftUI
 import CoreData
@@ -16,6 +15,11 @@ class OrderListViewModel: ObservableObject {
     var orders = [OrderViewModel]()
     
     init() {
+        fetchAllOrders()
+    }
+    
+    func deleteOrder(_ orderVM: OrderViewModel) {
+        CoreDataManager.shared.deleteOrder(name: orderVM.name)
         fetchAllOrders()
     }
     
