@@ -18,9 +18,9 @@ struct AddOrderViews: View {
                     TextField("Enter Text", text: self.$addOrderVM.name)
                     
                     Picker(selection: self.$addOrderVM.type, label: Text("")) {
-                        Text("Cappuccino").tag(1)
-                        Text("Regular").tag(2)
-                        Text("Expresso").tag(3)
+                        Text("Cappuccino").tag("cap")
+                        Text("Regular").tag("reg")
+                        Text("Expresso").tag("ex")
                     }.pickerStyle(SegmentedPickerStyle())
  
                     Button("Place Order") {
