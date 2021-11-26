@@ -21,12 +21,10 @@ struct AddOrderViews: View {
                         Text("Cappuccino").tag(1)
                         Text("Regular").tag(2)
                         Text("Expresso").tag(3)
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    .padding()
-                    
+                    }.pickerStyle(SegmentedPickerStyle())
+ 
                     Button("Place Order") {
-                        
+                        self.addOrderVM.saveOrder()
                     }
                     .padding(8)
                         .foregroundColor(Color.white)

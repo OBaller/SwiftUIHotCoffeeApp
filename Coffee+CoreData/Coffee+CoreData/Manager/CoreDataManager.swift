@@ -16,4 +16,27 @@ class CoreDataManager {
    private init(moc: NSManagedObjectContext) {
         self.moc = moc
     }
+    
+    func getAllOrders() -> [Order] {
+        var orders = [Order]()
+        let orderRequest: NSFetchRequest<Order> = Order.fetchRequest()
+        do {
+            orders = try self.moc.fetch(orderRequest)
+        } catch let error as NSError {
+            print(error)
+        }
+        return orders
+    }
+    
+    func saveOrder(name: String, type: String) {
+        let order = Order(context: self.moc)
+        order.name = name
+        order.type = type
+        
+        do {
+            try self.moc.save()
+        } catch let error as NSError {
+            print(error)
+        }
+    }
 }

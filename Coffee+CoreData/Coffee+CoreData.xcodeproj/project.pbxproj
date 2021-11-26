@@ -18,6 +18,7 @@
 		B4F8E9052750449E0062D41B /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8E9042750449E0062D41B /* NSManagedObjectContext+Extension.swift */; };
 		B4F8E9092750491D0062D41B /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8E9082750491D0062D41B /* AddOrderViewModel.swift */; };
 		B4F8E90C275049A70062D41B /* AddOrderViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8E90B275049A70062D41B /* AddOrderViews.swift */; };
+		B4F8E90E2750DA920062D41B /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8E90D2750DA920062D41B /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B4F8E9042750449E0062D41B /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
 		B4F8E9082750491D0062D41B /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
 		B4F8E90B275049A70062D41B /* AddOrderViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViews.swift; sourceTree = "<group>"; };
+		B4F8E90D2750DA920062D41B /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F8E9082750491D0062D41B /* AddOrderViewModel.swift */,
+				B4F8E90D2750DA920062D41B /* OrderListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				B4F8E8EA2750316A0062D41B /* AppDelegate.swift in Sources */,
 				B4F8E90C275049A70062D41B /* AddOrderViews.swift in Sources */,
 				B4F8E9052750449E0062D41B /* NSManagedObjectContext+Extension.swift in Sources */,
+				B4F8E90E2750DA920062D41B /* OrderListViewModel.swift in Sources */,
 				B4F8E8EC2750316A0062D41B /* SceneDelegate.swift in Sources */,
 				B4F8E8F12750316A0062D41B /* Coffee_CoreData.xcdatamodeld in Sources */,
 				B4F8E90227503A800062D41B /* CoreDataManager.swift in Sources */,
